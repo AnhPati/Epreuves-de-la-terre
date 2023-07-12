@@ -14,6 +14,19 @@ const isValidNumber = (number) => {
     }
 }
 
+const truncNumber = (number) => {
+    let string = number.toString()
+
+    if (string.includes('.')) {
+        const decimal = string.indexOf('.')
+
+        return Number(string.slice(0, decimal))
+
+    } else {
+        return Number(string)
+    }
+}
+
 const dividerAndModulo = () => {
     const arguments = process.argv.slice(2)
 
@@ -26,7 +39,8 @@ const dividerAndModulo = () => {
             secondNumber = Number(secondNumber)
 
             if ((firstNumber != 0 && secondNumber != 0) && firstNumber > secondNumber) {
-                const result = Math.trunc(firstNumber / secondNumber)
+                // const result = Math.trunc(firstNumber / secondNumber)
+                const result = truncNumber(firstNumber / secondNumber)
                 const modulo = firstNumber % secondNumber
 
                 return console.log(`Résultat : ${result}
