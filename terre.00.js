@@ -1,4 +1,4 @@
-const alphabet = () => {
+const getAlphabet = () => {
     let letter = 97
     let alphabet = []
 
@@ -10,4 +10,4 @@ const alphabet = () => {
     return console.log(alphabet.join(''))
 }
 
-alphabet()
+getAlphabet()
