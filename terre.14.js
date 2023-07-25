@@ -112,7 +112,7 @@ const sayIfSorted = () => {
     } else {
         console.log("Veuillez indiquer au minimum 3 arguments.")
     }
-
+     
 }
 
 sayIfSorted()
