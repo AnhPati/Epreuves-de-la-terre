@@ -23,7 +23,6 @@ const changeTimeFormatReverse = () => {
             let hours = Number(time.slice(0, timeSeparator))
             let minutes = time.slice(timeSeparator + 1, 5)
             let morningAfternoon = time.slice(5)
-            console.log(hours)
 
             if (hours < 12 && morningAfternoon == "PM") {
                 hours = hours + 12
@@ -33,7 +32,6 @@ const changeTimeFormatReverse = () => {
                 hours = `0${hours.toString()}`
             } else {
                 // hours = hours.toString()
-                console.log(hours)
             }
 
             return console.log(`Il est exactement ${hours}:${minutes}`)
