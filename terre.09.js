@@ -28,7 +28,6 @@ const getRootSquare = () => {
                 let numberSearched = number / 2
 
                 for (i = 1; i <= numberSearched; i++) {
-                    console.log(i)
                     if (i * i === number) {
                         result = i
                         break
